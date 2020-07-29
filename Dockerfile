@@ -95,7 +95,7 @@ COPY default-user.groovy /usr/share/jenkins/ref/init.groovy.d/
 COPY create-credential.groovy /usr/share/jenkins/ref/init.groovy.d/
  
 # Name the jobs  
-ARG job_name_1="sample-maven-job"
+ARG job_name_1="sample-job"
 RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_1}/latest/  
 RUN mkdir -p "$JENKINS_HOME"/jobs/${job_name_1}/builds/1/
 COPY ${job_name_1}_config.xml /usr/share/jenkins/ref/jobs/${job_name_1}/config.xml
