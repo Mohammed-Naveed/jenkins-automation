@@ -6,7 +6,6 @@ ARG HOST_DOCKER_GROUP_ID
 RUN install-plugins.sh pipeline-graph-analysis:1.9 \
 	cloudbees-folder:6.7 \
 	docker-commons:1.14 \
-	sbt:0.13.13 \
 	jdk-tool:1.2 \
 	script-security:1.56 \
 	pipeline-rest-api:2.10 \
